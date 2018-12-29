@@ -6,5 +6,3 @@ while i < array.length
 end
   array
 end
-
-my_each(array) {|x| puts x}
