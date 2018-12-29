@@ -1,10 +1,10 @@
 def my_each(array)
-  i = 0
-  while i < array.size
-    block_given? # optional
-    yield(array[i]) # if block, then yield to block # also need to pass argument(s)
-    #to yield, otherwise block is operating on nil
-    i += 1
-  end
-array
+i = 0
+while i < array.length
+  yield array[i]
+  i = i + 1
 end
+  array
+end
+
+my_each {|x| puts x}
